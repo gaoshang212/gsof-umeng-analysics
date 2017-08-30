@@ -12,7 +12,7 @@ const _1 = require("../");
 let analytics = new _1.umengAnalytics();
 function test() {
     return __awaiter(this, void 0, void 0, function* () {
-        const opts = { appkey: 'appkey ', appname: 'koolearn', version: '0.0.2', channel: 'koolearn', resolution: '1920*1080' };
+        const opts = { appkey: '5757879de0f55a7977000f4e', appname: 'koolearn', version: '0.0.2', channel: 'koolearn', resolution: '1920*1080' };
         yield analytics.initialize(opts);
         yield analytics.launching();
         //await task.delay(30000);

@@ -8,6 +8,8 @@ import { launch, terminate, body, header } from "./models";
 import { reportPolicy } from "./reportPolicy";
 import { request } from "./request";
 import { device } from "./device";
+import * as os from "os";
+
 
 
 export interface umengOptions {
@@ -127,7 +129,7 @@ export class umengAnalytics implements iUmengAnalytics {
             sdk_type: 'wphone',
             sdk_version: '2.0.1',
             os: 'WINDOWSPHONE OS 8.0',
-            os_version: "10",
+            os_version: os.release(),
             app_version: config.version,
             package: 'unknow',
             language: 'zh',
