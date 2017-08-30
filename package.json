@@ -1,0 +1,28 @@
+{
+  "name": "gsof-umeng-analysics",
+  "version": "0.1.0",
+  "description": "a app analysics base umeng wp interface for nodejs, can be use in electron. ",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "umeng",
+    "app",
+    "asalysics",
+    "electron"
+  ],
+  "author": "gaoshang",
+  "license": "MIT",
+  "dependencies": {
+    "appdata-path": "^0.1.2",
+    "gsof-simple-async-http": "^0.1.4",
+    "gsof-simple-file-async": "^0.1.5",
+    "gsof-system-token": "^0.1.4",
+    "moment": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.24"
+  }
+}
