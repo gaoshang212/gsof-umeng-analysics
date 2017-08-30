@@ -1,5 +1,4 @@
 import { iUmengAnalytics } from './iumengAnalytics'
-import { manager } from "./manager";
 import { config } from "./config";
 import { pathEx, utility } from "./utility";
 import { settingManager } from "./settings";

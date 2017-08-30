@@ -1,4 +1,4 @@
-import { manager } from "./manager";
+import { config } from "./config";
 import * as crypto from "crypto";
 import * as path from 'path';
 import { getAppDataPath } from "appdata-path";
@@ -9,7 +9,7 @@ export class pathEx {
     public static getPath(filename: string): string {
         let key = pathEx.key;
         if (!key) {
-            pathEx.key = key = utility.getMd5(manager.appkey + manager.channel);
+            pathEx.key = key = utility.getMd5(config.appkey + config.channel);
         }
 
         return path.join(getAppDataPath(), 'umeng', key, filename);

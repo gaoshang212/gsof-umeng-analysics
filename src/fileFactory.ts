@@ -1,7 +1,6 @@
 import { config } from "./config";
 import { pathEx } from "./utility";
 import * as path from 'path';
-import { manager } from "./manager";
 import { file, directory } from "gsof-simple-file-async";
 
 export class fileFactory {

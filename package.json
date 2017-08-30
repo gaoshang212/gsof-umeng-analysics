@@ -1,6 +1,6 @@
 {
   "name": "gsof-umeng-analysics",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "a app analysics base umeng wp interface for nodejs, can be use in electron. ",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
