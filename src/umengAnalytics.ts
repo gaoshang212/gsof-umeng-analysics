@@ -84,7 +84,9 @@ export class umengAnalytics implements iUmengAnalytics {
 
         let bodyfilename = settingManager.settings.bodyfilename;
         if (bodyfilename && bodyfilename !== filename) {
-            await file.delete(bodyfilename);
+            if (await file.exists(bodyfilename)) {
+                await file.delete(bodyfilename);
+            }
         }
 
         settingManager.settings.bodyfilename = filename;
